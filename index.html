@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+            padding: 20px 0;
+        }
+
+        .box {
+            width: 300px;
+            min-height: 400px;
+            background: linear-gradient(skyblue, pink);
+            margin: 20px 0;
+            scroll-snap-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            overflow: hidden;
+            /* Ensures that content like images stays within borders */
+        }
+
+        /* Image section of the Instagram post */
+        .box img {
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+
+        /* Caption section of the Instagram post */
+        .caption {
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .caption p {
+            margin: 5px 0;
+        }
+
+        .caption p.username {
+            font-weight: bold;
+        }
+
+        .caption p.date {
+            color: #888;
+            font-size: 12px;
+        }
+
+        /* Zoom and Fade effects */
+        .box.zoomed {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .box.faded {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/2.jpeg" alt="">
+            <div class="caption">
+                <p class="username">@lorem</p>
+                <p>This is a beautiful caption about my day at the beach. #sunshine #beachlife</p>
+                <p class="date">2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const boxes = document.querySelectorAll('.box');
+        const container = document.querySelector('.container');
+
+        container.addEventListener('scroll', () => {
+            const containerHeight = container.offsetHeight;
+            const scrollTop = container.scrollTop;
+
+            // Iterate over each box and update its classes based on its position
+            boxes.forEach((box, index) => {
+                const boxTop = box.offsetTop;
+                const boxHeight = box.offsetHeight;
+                const boxCenter = boxTop + boxHeight / 2;
+
+                // Calculate the distance between the center of the container and the center of the box
+                const distance = Math.abs(containerHeight / 2 - boxCenter + scrollTop);
+
+                // Apply zoom and fade effects based on proximity to the center
+                if (distance < containerHeight / 2) {
+                    box.classList.add('zoomed');
+                    box.classList.remove('faded');
+                } else {
+                    box.classList.remove('zoomed');
+                    box.classList.add('faded');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
